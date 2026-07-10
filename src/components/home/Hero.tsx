@@ -15,7 +15,7 @@ interface Slide {
 
 const slides: Slide[] = [
   {
-    image: "/images/hero4.jpeg",
+    image: "/images/hero2.jpeg",
     description:
       "Real-time visibility and IoT-powered vigilance. Transforming data into supply chain resilience.",
     ctaLabel: "Explore Technology",
@@ -23,7 +23,7 @@ const slides: Slide[] = [
     headline: "The Digital Pulse of Logistics.",
   },
   {
-    image: "/images/hero2.JPG",
+    image: "/images/hero4.jpeg",
     description:
       "Purpose-built logistics and mining infrastructure, engineered for scale, safety, and continuous operation.",
     ctaLabel: "Explore Our Sites",
@@ -31,7 +31,7 @@ const slides: Slide[] = [
     headline: "Infrastructure Built For Industry.",
   },
   {
-    image: "/images/hero4.JPG",
+    image: "/images/banner-img3.jpeg",
     description:
       "A modern, GPS-tracked fleet standing ready for nationwide distribution and cross-border dispatch.",
     ctaLabel: "Explore Our Fleet",
