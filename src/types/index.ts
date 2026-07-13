@@ -14,11 +14,17 @@ export interface SocialLink {
   icon: SvgIcon;
 }
 
+export interface SubService {
+  title: string;
+  href: string;
+}
+
 export interface ServiceItem {
   slug: string;
   title: string;
   description: string;
   icon: string;
+  subServices?: SubService[];
 }
 
 export interface Testimonial {

@@ -47,7 +47,12 @@ export default function Nav() {
               >
                 <Link
                   href={item.href}
-                  onClick={() => setOpen(false)}
+                  onClick={(e) => {
+                    if (isServices && window.matchMedia("(min-width: 768px)").matches) {
+                      e.preventDefault();
+                    }
+                    setOpen(false);
+                  }}
                   className="block px-0 py-3 md:px-0"
                 >
                   <span
@@ -73,49 +78,85 @@ export default function Nav() {
       <div
         onMouseEnter={() => setServicesOpen(true)}
         onMouseLeave={() => setServicesOpen(false)}
-        className={`absolute inset-x-0 top-full z-40 hidden border-t border-white/10 bg-navy-dark shadow-2xl transition-all duration-200 md:block ${
+        className={`absolute left-1/2 top-full z-40 hidden w-[min(94vw,960px)] max-h-[75vh] -translate-x-1/2 overflow-y-auto border border-white/10 bg-navy-dark shadow-2xl transition-all duration-200 md:block ${
           servicesOpen
             ? "visible translate-y-0 opacity-100"
             : "invisible -translate-y-1 opacity-0"
         }`}
       >
-        <Container className="grid gap-10 py-10 md:grid-cols-[1fr_1.2fr]">
+        <div className="grid gap-8 px-8 py-8 md:grid-cols-[1fr_1.2fr]">
           <div>
             <p className="text-xs font-semibold uppercase tracking-widest text-white/40">
               Core Services
             </p>
             <ul className="mt-4 divide-y divide-white/10">
-              {services.map(({ title, icon }) => (
-                <li key={title}>
-                  <Link
-                    href="/services"
-                    onClick={() => setServicesOpen(false)}
-                    className="group/item flex items-center gap-3 py-3"
-                  >
-                    <span className="relative h-[18px] w-[18px] shrink-0">
-                      <Image
-                        src={icon}
-                        alt=""
-                        fill
-                        sizes="18px"
-                        className="object-contain invert transition-opacity duration-200 opacity-60 group-hover/item:opacity-100"
-                      />
-                    </span>
-                    <span className="text-sm font-bold uppercase tracking-wide text-white transition-colors group-hover/item:text-red">
-                      {title}
-                    </span>
-                  </Link>
-                </li>
-              ))}
+              {services.map(({ slug, title, icon, subServices }) => {
+                const iconEl = (
+                  <span className="relative h-6 w-6 shrink-0">
+                    <Image
+                      src={icon}
+                      alt=""
+                      fill
+                      sizes="24px"
+                      className="object-contain invert transition-opacity duration-200 opacity-60 group-hover/item:opacity-100"
+                    />
+                  </span>
+                );
+
+                if (subServices && subServices.length > 0) {
+                  return (
+                    <li key={slug} className="group/flyout relative">
+                      <button
+                        type="button"
+                        className="group/item flex w-full items-center gap-3 py-2 text-left"
+                      >
+                        {iconEl}
+                        <span className="text-sm font-bold uppercase leading-snug tracking-wide text-white transition-colors group-hover/item:text-red">
+                          {title}
+                        </span>
+                        <ChevronRight
+                          size={14}
+                          className="ml-auto text-white/40 transition-colors group-hover/item:text-red"
+                        />
+                      </button>
+
+                      <div
+                        className="invisible absolute left-full top-0 z-50 ml-2 w-64 border border-white/10 bg-navy-dark opacity-0 shadow-2xl transition-all duration-150 group-hover/flyout:visible group-hover/flyout:opacity-100"
+                      >
+                        <ul className="divide-y divide-white/10 py-2">
+                          {subServices.map((sub) => (
+                            <li key={sub.href}>
+                              <Link
+                                href={sub.href}
+                                onClick={() => setServicesOpen(false)}
+                                className="block px-4 py-2.5 text-sm font-semibold text-white/80 transition-colors hover:bg-white/5 hover:text-red"
+                              >
+                                {sub.title}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </li>
+                  );
+                }
+
+                return (
+                  <li key={slug}>
+                    <Link
+                      href={`/services/${slug}`}
+                      onClick={() => setServicesOpen(false)}
+                      className="group/item flex items-center gap-3 py-2"
+                    >
+                      {iconEl}
+                      <span className="text-sm font-bold uppercase leading-snug tracking-wide text-white transition-colors group-hover/item:text-red">
+                        {title}
+                      </span>
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
-            <Link
-              href="/services"
-              onClick={() => setServicesOpen(false)}
-              className="mt-4 inline-flex items-center gap-1 text-xs font-bold uppercase tracking-wide text-red hover:text-red-dark"
-            >
-              View All Services
-              <ChevronRight size={14} />
-            </Link>
           </div>
           <div className="relative hidden overflow-hidden rounded-sm md:block">
             <Image
@@ -126,7 +167,7 @@ export default function Nav() {
               className="object-cover"
             />
           </div>
-        </Container>
+        </div>
       </div>
     </nav>
   );

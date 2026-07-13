@@ -33,52 +33,122 @@ export const socialLinks: SocialLink[] = [
 
 export const services: ServiceItem[] = [
   {
-    slug: "pharma-cold-chain",
-    title: "Pharma & Cold Chain",
+    slug: "global-freight-management",
+    title: "Global Freight Management",
+    description:
+      "Integrated Air and Ocean freight solutions with priority space and door-to-port transparency.",
+    icon: "/images/icons/air-freight.png",
+    subServices: [
+      { title: "Air Freight", href: "/services/air-freight" },
+      { title: "Ocean Freight", href: "/services/ocean-freight" },
+    ],
+  },
+  {
+    slug: "inland-powerhouse",
+    title: "In-Land Powerhouse",
+    description:
+      "High-capacity 45ft standardized fleet for nationwide primary and secondary distribution.",
+    icon: "/images/icons/road-freight.png",
+    subServices: [
+      {
+        title: "Dry Containerized Transportation",
+        href: "/services/dry-containerized-transportation",
+      },
+      { title: "Reefer Transportation", href: "/services/reefer-transportation" },
+      { title: "Industrial Bulk & Coal Cargo", href: "/services/industrial-bulk-coal-cargo" },
+    ],
+  },
+  {
+    slug: "integrated-contract-logistics",
+    title: "Integrated Solutions & Contract Logistics",
+    description:
+      "Smart warehousing and inventory diagnosis to optimize SKU velocity and fulfillment.",
+    icon: "/images/icons/warehousing.png",
+    subServices: [
+      {
+        title: "Warehousing & 3PL/4PL Management",
+        href: "/services/warehousing-3pl-4pl-management",
+      },
+      {
+        title: "E-Commerce & Last-Mile Fulfillment",
+        href: "/services/ecommerce-last-mile-fulfillment",
+      },
+      { title: "Exhibition & Event Logistics", href: "/services/exhibition-event-logistics" },
+      { title: "Cold Chain Warehousing", href: "/services/cold-chain-warehousing" },
+    ],
+  },
+  {
+    slug: "pharma-temperature-controlled",
+    title: "Pharma & Temperature Controlled Logistics",
     description:
       "Zero-deviation temperature control (-35°C to +35°C) with real-time thermal monitoring for life sciences.",
     icon: "/images/icons/cold-chain.png",
   },
   {
-    slug: "cis-connect",
-    title: "CIS Connect",
+    slug: "tir-transit-cis-connect",
+    title: "TIR Transit & CIS Connect",
     description:
       "Strategic corridors to Central Asia. Seamless cross-border transitions to Uzbekistan, Kazakhstan, and beyond.",
-    icon: "/images/icons/mining-logistics.png",
+    icon: "/images/icons/ocean-freight.png",
   },
   {
-    slug: "dry-bulk-transport",
-    title: "Dry & Bulk Transport",
-    description:
-      "High-capacity 45ft standardized fleet for nationwide primary and secondary distribution.",
-    icon: "/images/icons/road-freight.png",
-  },
-  {
-    slug: "global-forwarding",
-    title: "Global Forwarding",
-    description:
-      "Integrated Air and Ocean freight solutions with priority space and door-to-port transparency.",
-    icon: "/images/icons/air-freight.png",
-  },
-  {
-    slug: "oog-project-cargo",
-    title: "OOG & Project Cargo",
+    slug: "specialized-project-logistics",
+    title: "Specialized Project Logistics",
     description:
       "Engineering-led transport for oversized industrial cargo, turbines, and heavy-lift machinery.",
     icon: "/images/icons/project-logistics.png",
   },
   {
-    slug: "3pl-4pl-solutions",
-    title: "3PL/4PL Solutions",
+    slug: "digital-vigilance-suite",
+    title: "Technology: The Digital Vigilance Suite",
     description:
-      "Smart warehousing and inventory diagnosis to optimize SKU velocity and fulfillment.",
-    icon: "/images/icons/warehousing.png",
+      "Real-time visibility powered by dual dashcam monitoring, predictive ETA analytics, and geo-fencing across every shipment.",
+    icon: "/images/icons/expo-logistics.png",
+  },
+  {
+    slug: "specialized-mining-logistics",
+    title: "Specialized Mining Logistics",
+    description:
+      "Dedicated fleet and site support for coal and mineral extraction operations, from pit to port.",
+    icon: "/images/icons/mining-logistics.png",
   },
 ];
 
 export function findService(slug: string): ServiceItem | undefined {
   return services.find((service) => service.slug === slug);
 }
+
+export const serviceNavItems = [
+  { title: "Air Freight", href: "/services/air-freight" },
+  { title: "Ocean Freight", href: "/services/ocean-freight" },
+  {
+    title: "Dry Containerized Transportation",
+    href: "/services/dry-containerized-transportation",
+  },
+  { title: "Reefer Transportation", href: "/services/reefer-transportation" },
+  { title: "Industrial Bulk & Coal Cargo", href: "/services/industrial-bulk-coal-cargo" },
+  {
+    title: "Warehousing & 3PL/4PL Management",
+    href: "/services/warehousing-3pl-4pl-management",
+  },
+  {
+    title: "E-Commerce & Last-Mile Fulfillment",
+    href: "/services/ecommerce-last-mile-fulfillment",
+  },
+  { title: "Exhibition & Event Logistics", href: "/services/exhibition-event-logistics" },
+  {
+    title: "Pharma & Temperature Controlled Logistics",
+    href: "/services/pharma-temperature-controlled",
+  },
+  { title: "TIR Transit & CIS Connect", href: "/services/tir-transit-cis-connect" },
+  { title: "Specialized Project Logistics", href: "/services/specialized-project-logistics" },
+  {
+    title: "Technology: The Digital Vigilance Suite",
+    href: "/services/digital-vigilance-suite",
+  },
+  { title: "Specialized Mining Logistics", href: "/services/specialized-mining-logistics" },
+  { title: "Cold Chain Warehousing", href: "/services/cold-chain-warehousing" },
+];
 
 export const whyMeridianPoints = [
   {
@@ -137,7 +207,7 @@ export const faqs: FaqItem[] = [
   {
     question: "Do you provide end-to-end handling for the CIS and Central Asian regions?",
     answer:
-      "Yes. Our CIS Connect corridors offer seamless cross-border transitions to Uzbekistan, Kazakhstan, and beyond, with full documentation and customs support handled in-house.",
+      "Yes. Our TIR Transit & CIS Connect corridors offer seamless cross-border transitions to Uzbekistan, Kazakhstan, and beyond, with full documentation and customs support handled in-house.",
   },
 ];
 

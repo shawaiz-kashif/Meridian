@@ -1,7 +1,11 @@
 {
   "permissions": {
     "allow": [
-      "Bash(\"/c/Program Files/Python312/python\")"
+      "Bash(\"/c/Program Files/Python312/python\")",
+      "Bash(cd \"c:/Shawaiz Data/meridian\" && rm -rf .next && echo \"cleared .next cache\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Shawaiz Data\\meridian\\.next"
     ]
   }
 }

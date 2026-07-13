@@ -1,19 +1,20 @@
 import type { Metadata } from "next";
-import PageHero from "@/components/ui/PageHero";
-import WhyMeridian from "@/components/home/WhyMeridian";
-import Testimonials from "@/components/home/Testimonials";
+import ServiceHero from "@/components/services/ServiceHero";
+import AboutContent from "@/components/about/AboutContent";
+import LogisticStats from "@/components/about/LogisticStats";
 
 export const metadata: Metadata = {
   title: "About Us | Meridian Logistics",
-  description: "Learn about Meridian Logistics and the Meridian Control Tower.",
+  description:
+    "Meridian Logistics stands as a trusted partner for outsourcing and managing complex supply chains, operating with a Digital First culture.",
 };
 
 export default function AboutUsPage() {
   return (
     <>
-      <PageHero eyebrow="About Us" title="Our Features" />
-      <WhyMeridian />
-      <Testimonials />
+      <ServiceHero title="About Us" image="/images/banner+img/About-Us.png" />
+      <AboutContent />
+      <LogisticStats />
     </>
   );
 }
