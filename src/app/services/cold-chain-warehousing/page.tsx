@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/cold-chain-warehousing"
       title={title}
       eyebrow="Life Sciences Storage"
-      heroImage="/images/banner+img/Cold-Chain.png"
-      contentImage="/images/banner+img/Cold-Chain-1280X500.png"
+      heroImage="/images/banner/Cold-Chain.png"
+      bannerHasText
+      contentImage="/images/pics/Cold-Chain-1280X500.png"
       richContent={[
         {
           heading: "The Standard in Thermal Preservation",

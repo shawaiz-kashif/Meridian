@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/dry-containerized-transportation"
       title={title}
       eyebrow="Nationwide Distribution"
-      heroImage="/images/banner+img/Dry-Containerized-1.png"
-      contentImage="/images/banner+img/Dry-Containerized-1280X500.png"
+      heroImage="/images/banner/Road-Transport.png"
+      bannerHasText
+      contentImage="/images/pics/Road-Transport-1280X500.png"
       bullets={[
         {
   label: "HIGH-CUBE 45FT FLEET",

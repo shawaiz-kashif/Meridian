@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/warehousing-3pl-4pl-management"
       title={title}
       eyebrow="Smart Warehousing"
-      heroImage="/images/banner+img/warehouseHero.png"
-      contentImage="/images/banner+img/Warehousing-1280X500.png"
+      heroImage="/images/banner/Warehousing.png"
+      bannerHasText
+      contentImage="/images/pics/Warehousing-1280X500.png"
       bullets={[
        {
   label: "INVENTORY DIAGNOSIS",

@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/industrial-bulk-coal-cargo"
       title={title}
       eyebrow="High-Capacity Bulk Transport"
-      heroImage="/images/banner+img/Industrial-Bulk-Coal-Cargo.png"
-      contentImage="/images/banner+img/Industrial-Bulk-Coal-Cargo-1280x500-1.png"
+      heroImage="/images/banner/Industrial-Bulk-Coal-Cargo.png"
+      bannerHasText
+      contentImage="/images/pics/Industrial-Bulk-Coal-Cargo-1280x500.png"
       bullets={[
         {
   label: "HIGH-VOLUME TRAILERS",

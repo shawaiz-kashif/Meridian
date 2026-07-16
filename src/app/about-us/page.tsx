@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 export default function AboutUsPage() {
   return (
     <>
-      <ServiceHero title="About Us" image="/images/banner+img/About-Us.png" />
+      <ServiceHero title="About Us" image="/images/pics/About-Us.png" />
       <AboutContent />
       <LogisticStats />
     </>

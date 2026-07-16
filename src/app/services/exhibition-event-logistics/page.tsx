@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/exhibition-event-logistics"
       title={title}
       eyebrow="Time-Sensitive Event Cargo"
-      heroImage="/images/banner+img/Exhibition-Event-Logistics-1.png"
-      contentImage="/images/banner+img/Exhibition-Event-Logistics-1280X500.png"
+      heroImage="/images/banner/Exhibition-Event-Logistics.png"
+      bannerHasText
+      contentImage="/images/pics/Exhibition-Event-Logistics-1280X500.png"
       bullets={[
         {
   label: "FLAWLESS EXECUTION",

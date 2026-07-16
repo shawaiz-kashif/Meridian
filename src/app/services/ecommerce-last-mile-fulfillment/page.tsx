@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/ecommerce-last-mile-fulfillment"
       title={title}
       eyebrow="Built For E-Commerce Speed"
-      heroImage="/images/banner+img/ECOM-1.png"
-      contentImage="/images/banner+img/ECOM-1280X500.png"
+      heroImage="/images/banner/ECOM.png"
+      bannerHasText
+      contentImage="/images/pics/ECOM-1280X500.png"
       bullets={[
         {
   label: "BESPOKE FULFILLMENT CENTERS",

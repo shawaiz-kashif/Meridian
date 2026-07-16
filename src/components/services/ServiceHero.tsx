@@ -5,9 +5,34 @@ import Container from "@/components/ui/Container";
 interface ServiceHeroProps {
   title: string;
   image: string;
+  /**
+   * Set when `image` is a pre-designed 1600x200 banner with its own
+   * baked-in title/tagline text — renders at native aspect ratio with no
+   * overlay instead of cropping it into a tall photo hero.
+   */
+  bannerHasText?: boolean;
 }
 
-export default function ServiceHero({ title, image }: ServiceHeroProps) {
+export default function ServiceHero({ title, image, bannerHasText = false }: ServiceHeroProps) {
+  if (bannerHasText) {
+    return (
+      <section
+        className="relative w-full overflow-hidden bg-navy-dark"
+        style={{ aspectRatio: "8 / 1" }}
+      >
+        <Image src={image} alt={title} fill priority sizes="100vw" className="object-cover" />
+        <div className="absolute bottom-2 right-3 sm:bottom-4 sm:right-6">
+          <p className="text-xs text-white/80 sm:text-sm">
+            <Link href="/" className="hover:text-white">
+              Home
+            </Link>{" "}
+            / {title}
+          </p>
+        </div>
+      </section>
+    );
+  }
+
   return (
     <section className="relative h-[280px] overflow-hidden md:h-[360px]">
       <Image src={image} alt="" fill priority sizes="100vw" className="object-cover" />

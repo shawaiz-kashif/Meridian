@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/air-freight"
       title={title}
       eyebrow="Priority & Specialized Uplift"
-      heroImage="/images/banner+img/Air-Frieght-1.png"
-      contentImage="/images/banner+img/Air-Frieght-1280X500.png"
+      heroImage="/images/banner/Air-Frieght.png"
+      bannerHasText
+      contentImage="/images/pics/Air-Frieght-1280X500.png"
       bullets={[
         {
           label: "Full & Part Charter",

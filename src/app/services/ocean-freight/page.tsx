@@ -16,8 +16,9 @@ export default function Page() {
       href="/services/ocean-freight"
       title={title}
       eyebrow="Global Trade Lanes"
-      heroImage="/images/banner+img/OCEAN-Freight-1.png"
-      contentImage="/images/banner+img/OCEAN-Freight-1280X500.png"
+      heroImage="/images/banner/OCEAN-Freight.png"
+      bannerHasText
+      contentImage="/images/pics/OCEAN-Freight-1280X500.png"
       bullets={[
         {
           label: "FCL (FULL CONTAINER LOAD)",

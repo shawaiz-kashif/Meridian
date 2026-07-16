@@ -15,8 +15,9 @@ export default function Page() {
       href="/services/pharma-temperature-controlled"
       title={service.title}
       eyebrow="Life Sciences & Cold Chain"
-      heroImage="/images/banner+img/Pharma-Temperature-Controlled-1.png"
-      contentImage="/images/banner+img/Pharma-Temperature-Controlled-1280X500.png"
+      heroImage="/images/banner/Pharma-Temperature-Controlled.png"
+      bannerHasText
+      contentImage="/images/pics/Pharma-Temperature-Controlled-1280X500.png"
       bullets={[
         {
   label: "ZERO-DEVIATION COLD CHAIN",

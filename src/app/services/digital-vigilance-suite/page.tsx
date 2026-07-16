@@ -15,8 +15,9 @@ export default function Page() {
       href="/services/digital-vigilance-suite"
       title={service.title}
       eyebrow="Real-Time Visibility"
-      heroImage="/images/banner+img/The-Digital-Vigilance-Suite-1.png"
-      contentImage="/images/banner+img/The-Digital-Vigilance-Suite-1280X500.png"
+      heroImage="/images/banner/The-Digital-Vigilance-Suite.png"
+      bannerHasText
+      contentImage="/images/pics/The-Digital-Vigilance-Suite-1280X500.png"
       bullets={[
         {
   label: "INTEGRATED CONTROL TOWER",

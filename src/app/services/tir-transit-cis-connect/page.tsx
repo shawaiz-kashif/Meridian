@@ -15,8 +15,9 @@ export default function Page() {
       href="/services/tir-transit-cis-connect"
       title={service.title}
       eyebrow="Central Asian Corridors"
-      heroImage="/images/banner+img/CIS-Connect-1.png"
-      contentImage="/images/banner+img/CIS-Connect-1280X500.png"
+      heroImage="/images/banner/CIS-Connect.png"
+      bannerHasText
+      contentImage="/images/pics/CIS-Connect-1280X500.png"
       richContent={[
         {
           heading: "Strategic Road Transport. Seamless Cross-Border Transitions.",

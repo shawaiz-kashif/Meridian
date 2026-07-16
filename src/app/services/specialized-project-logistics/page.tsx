@@ -15,8 +15,9 @@ export default function Page() {
       href="/services/specialized-project-logistics"
       title={service.title}
       eyebrow="Engineering-Led Heavy-Lift"
-      heroImage="/images/banner+img/Specialized-Projectt.png"
-      contentImage="/images/banner+img/Specialized-Project-1280X500.png"
+      heroImage="/images/banner/Specialized-Projectt.png"
+      bannerHasText
+      contentImage="/images/pics/Specialized-Project-1280X500.png"
       bullets={[
         {
   label: "OOG & HEAVY-LIFT",

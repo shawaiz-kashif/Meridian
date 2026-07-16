@@ -22,6 +22,7 @@ interface ServiceDetailTemplateProps {
   title: string;
   eyebrow: string;
   heroImage: string;
+  bannerHasText?: boolean;
   contentImage: string;
   bullets?: Bullet[];
   richContent?: RichSection[];
@@ -51,13 +52,14 @@ export default function ServiceDetailTemplate({
   title,
   eyebrow,
   heroImage,
+  bannerHasText,
   contentImage,
   bullets,
   richContent,
 }: ServiceDetailTemplateProps) {
   return (
     <>
-      <ServiceHero title={title} image={heroImage} />
+      <ServiceHero title={title} image={heroImage} bannerHasText={bannerHasText} />
 
       <section className="bg-white py-16 md:py-20">
         <Container>
