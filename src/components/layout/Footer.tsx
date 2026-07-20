@@ -34,14 +34,23 @@ export default function Footer() {
           <h3 className="mb-4 border-b-2 border-red pb-2 text-sm font-bold uppercase tracking-widest">
             Contact
           </h3>
-          <p className="text-sm leading-relaxed text-white/70">
-            Mehran Logistics Center | NC-119 Deh Tore Superhighway
-            <br />
-            Near Toll Plaza Karachi | Pakistan
-          </p>
+          <div className="space-y-4 text-sm leading-relaxed text-white/70">
+            <p>
+              <span className="font-bold text-white">Head Office:</span> Mehran Logistics
+              Center | NC-119 Deh Tore Superhighway, Near Toll Plaza Karachi | Pakistan
+            </p>
+            <p>
+              <span className="font-bold text-white">Regional Office:</span> Mezzanine
+              Floor Munawar Tower II, Broadway Commercial, DHA Phase 8, Lahore | Pakistan.
+            </p>
+            <p>
+              <span className="font-bold text-white">Branch Office:</span> Faisalabad,
+              Sialkot, Multan
+            </p>
+          </div>
           <a
             href="mailto:info@meridianlogistics.com.pk"
-            className="mt-3 inline-block text-sm text-white/70 transition-colors hover:text-white"
+            className="mt-4 inline-block text-sm text-white/70 transition-colors hover:text-white"
           >
             info@meridianlogistics.com.pk
           </a>
