@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import ServiceDetailTemplate from "@/components/services/ServiceDetailTemplate";
 
-const title = "Exhibition & Event Logistics";
+const title = "Expo & Event Logistics";
 const description =
   "End-to-end logistics for exhibitions, trade shows, and time-sensitive event cargo.";
 
@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ServiceDetailTemplate
-      href="/services/exhibition-event-logistics"
       title={title}
       eyebrow="Time-Sensitive Event Cargo"
       heroImage="/images/banner/Exhibition-Event-Logistics.png"

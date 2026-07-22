@@ -13,7 +13,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ServiceDetailTemplate
-      href="/services/air-freight"
       title={title}
       eyebrow="Priority & Specialized Uplift"
       heroImage="/images/banner/Air-Frieght.png"

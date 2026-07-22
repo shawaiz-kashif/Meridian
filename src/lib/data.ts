@@ -34,7 +34,7 @@ export const socialLinks: SocialLink[] = [
 export const services: ServiceItem[] = [
   {
     slug: "global-freight-management",
-    title: "Global Freight Management",
+    title: "International Freight Management",
     description:
       "Integrated Air and Ocean freight solutions with priority space and door-to-port transparency.",
     icon: "/images/icons/air-freight.png",
@@ -55,7 +55,6 @@ export const services: ServiceItem[] = [
         href: "/services/dry-containerized-transportation",
       },
       { title: "Reefer Transportation", href: "/services/reefer-transportation" },
-      { title: "Industrial Bulk & Coal Cargo", href: "/services/industrial-bulk-coal-cargo" },
     ],
   },
   {
@@ -69,11 +68,7 @@ export const services: ServiceItem[] = [
         title: "Warehousing & 3PL/4PL Management",
         href: "/services/warehousing-3pl-4pl-management",
       },
-      {
-        title: "E-Commerce & Last-Mile Fulfillment",
-        href: "/services/ecommerce-last-mile-fulfillment",
-      },
-      { title: "Exhibition & Event Logistics", href: "/services/exhibition-event-logistics" },
+      { title: "Expo & Event Logistics", href: "/services/exhibition-event-logistics" },
       { title: "Cold Chain Warehousing", href: "/services/cold-chain-warehousing" },
     ],
   },
@@ -117,38 +112,6 @@ export const services: ServiceItem[] = [
 export function findService(slug: string): ServiceItem | undefined {
   return services.find((service) => service.slug === slug);
 }
-
-export const serviceNavItems = [
-  { title: "Air Freight", href: "/services/air-freight" },
-  { title: "Ocean Freight", href: "/services/ocean-freight" },
-  {
-    title: "Dry Containerized Transportation",
-    href: "/services/dry-containerized-transportation",
-  },
-  { title: "Reefer Transportation", href: "/services/reefer-transportation" },
-  { title: "Industrial Bulk & Coal Cargo", href: "/services/industrial-bulk-coal-cargo" },
-  {
-    title: "Warehousing & 3PL/4PL Management",
-    href: "/services/warehousing-3pl-4pl-management",
-  },
-  {
-    title: "E-Commerce & Last-Mile Fulfillment",
-    href: "/services/ecommerce-last-mile-fulfillment",
-  },
-  { title: "Exhibition & Event Logistics", href: "/services/exhibition-event-logistics" },
-  {
-    title: "Pharma & Temperature Controlled Logistics",
-    href: "/services/pharma-temperature-controlled",
-  },
-  { title: "TIR Transit & CIS Connect", href: "/services/tir-transit-cis-connect" },
-  { title: "Specialized Project Logistics", href: "/services/specialized-project-logistics" },
-  {
-    title: "Technology: The Digital Vigilance Suite",
-    href: "/services/digital-vigilance-suite",
-  },
-  { title: "Specialized Mining Logistics", href: "/services/specialized-mining-logistics" },
-  { title: "Cold Chain Warehousing", href: "/services/cold-chain-warehousing" },
-];
 
 export const whyMeridianPoints = [
   {

@@ -12,7 +12,6 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ServiceDetailTemplate
-      href="/services/tir-transit-cis-connect"
       title={service.title}
       eyebrow="Central Asian Corridors"
       heroImage="/images/banner/CIS-Connect.png"

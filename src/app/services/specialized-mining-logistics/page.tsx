@@ -12,11 +12,11 @@ export const metadata: Metadata = {
 export default function Page() {
   return (
     <ServiceDetailTemplate
-      href="/services/specialized-mining-logistics"
       title={service.title}
       eyebrow="Pit-To-Port Support"
-      heroImage="/images/coalhero6.jpg"
-      contentImage="/images/coalhero6.jpg"
+      heroImage="/images/banner/Industrial-Bulk-Coal-Cargo.png"
+      bannerHasText
+      contentImage="/images/pics/Industrial-Bulk-Coal-Cargo-1280x500.png"
       richContent={[
         {
           heading: "Project Spotlight: SECMC Thar Coal Block II",
