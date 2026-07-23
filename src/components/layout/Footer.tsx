@@ -38,10 +38,24 @@ export default function Footer() {
             <p>
               <span className="font-bold text-white">Head Office:</span> Mehran Logistics
               Center | NC-119 Deh Tore Superhighway, Near Toll Plaza Karachi | Pakistan
+              <br />
+              <a
+                href="tel:+923008230190"
+                className="text-white/70 transition-colors hover:text-white"
+              >
+                +92 300 8230190
+              </a>
             </p>
             <p>
               <span className="font-bold text-white">Regional Office:</span> Mezzanine
               Floor Munawar Tower II, Broadway Commercial, DHA Phase 8, Lahore | Pakistan.
+              <br />
+              <a
+                href="tel:+923334446941"
+                className="text-white/70 transition-colors hover:text-white"
+              >
+                +92 333 4446941
+              </a>
             </p>
             <p>
               <span className="font-bold text-white">Branch Office:</span> Faisalabad,

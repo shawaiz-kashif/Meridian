@@ -1,4 +1,4 @@
-import { ArrowUpRight, Clock, Mail, MapPin } from "lucide-react";
+import { ArrowUpRight, Clock, Mail, MapPin, Phone } from "lucide-react";
 import Container from "@/components/ui/Container";
 
 const officeAddress =
@@ -13,6 +13,18 @@ const details = [
     value: "info@meridianlogistics.com.pk",
     href: "mailto:info@meridianlogistics.com.pk",
   },
+  {
+    icon: Phone,
+    label: "Karachi Office",
+    value: "+92 300 8230190",
+    href: "tel:+923008230190",
+  },
+  {
+    icon: Phone,
+    label: "Lahore Office",
+    value: "+92 333 4446941",
+    href: "tel:+923334446941",
+  },
   { icon: Clock, label: "Hours", value: "Mon–Fri, 9:00am–5:30pm (PKT)" },
 ];
 
@@ -20,7 +32,7 @@ export default function ContactDetails() {
   return (
     <section className="bg-gray-section pb-16 md:pb-24">
       <Container>
-        <div className="grid gap-5 sm:grid-cols-3">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {details.map(({ icon: Icon, label, value, href }) => (
             <div
               key={label}
