@@ -56,6 +56,8 @@ export default function Footer() {
               >
                 +92 333 4446941
               </a>
+              <span className="font-bold text-white">Regional Office:</span> 1st Floor,
+              99-Commercial Area, Cavalry Ground, Lahore Cantt. | +92-333-4446941
             </p>
             <p>
               <span className="font-bold text-white">Branch Office:</span> Faisalabad,
