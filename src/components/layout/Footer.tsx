@@ -47,15 +47,6 @@ export default function Footer() {
               </a>
             </p>
             <p>
-              <span className="font-bold text-white">Regional Office:</span> Mezzanine
-              Floor Munawar Tower II, Broadway Commercial, DHA Phase 8, Lahore | Pakistan.
-              <br />
-              <a
-                href="tel:+923334446941"
-                className="text-white/70 transition-colors hover:text-white"
-              >
-                +92 333 4446941
-              </a>
               <span className="font-bold text-white">Regional Office:</span> 1st Floor,
               99-Commercial Area, Cavalry Ground, Lahore Cantt. | +92-333-4446941
             </p>
