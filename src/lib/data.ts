@@ -22,8 +22,6 @@ export const navItems: NavItem[] = [
   { label: "Contact Us", subtitle: "Contact Info", href: "/contact-us" },
 ];
 
-export const globalPresence = ["Karachi", "Faisalabad", "Lahore", "CIS Region"];
-
 export const socialLinks: SocialLink[] = [
   { label: "LinkedIn", href: "#", icon: LinkedinIcon },
   { label: "Facebook", href: "#", icon: FacebookIcon },

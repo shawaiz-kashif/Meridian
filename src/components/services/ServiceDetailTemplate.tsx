@@ -29,7 +29,6 @@ interface ServiceDetailTemplateProps {
   richContent?: RichSection[];
 }
 
-/** Renders `**bold**` segments within a plain string as <strong>. */
 function RichText({ text }: { text: string }) {
   const parts = text.split(/(\*\*[^*]+\*\*)/g);
   return (

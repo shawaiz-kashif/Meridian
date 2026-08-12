@@ -67,8 +67,6 @@ function buildEmailHtml(fields: {
   </table>`;
 }
 
-// --- Abuse protection ---------------------------------------------------
-
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const MAX_LEN: Record<string, number> = {
   name: 100,
@@ -80,8 +78,8 @@ const MAX_LEN: Record<string, number> = {
   message: 5000,
 };
 
-const RATE_LIMIT = 5; // submissions
-const RATE_WINDOW_MS = 10 * 60 * 1000; // per 10 minutes, per IP
+const RATE_LIMIT = 5;
+const RATE_WINDOW_MS = 10 * 60 * 1000;
 const submissionsByIp = new Map<string, number[]>();
 
 function isRateLimited(ip: string): boolean {
@@ -98,7 +96,6 @@ function clientIp(request: Request): string {
   return request.headers.get("x-forwarded-for")?.split(",")[0]?.trim() ?? "unknown";
 }
 
-/** Trims a field, enforces a max length, and coerces non-strings to "". */
 function clean(value: unknown, max: number): string {
   if (typeof value !== "string") return "";
   return value.trim().slice(0, max);
@@ -118,8 +115,6 @@ export async function POST(request: Request) {
     return Response.json({ error: "Invalid request." }, { status: 400 });
   }
 
-  // Honeypot — a real visitor never fills this (hidden off-screen in the form).
-  // Bots that blindly fill every field will trip it; pretend success and drop silently.
   if (clean((body as Record<string, unknown>).website, 200)) {
     return Response.json({ ok: true });
   }

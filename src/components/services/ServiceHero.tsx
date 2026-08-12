@@ -5,11 +5,6 @@ import Container from "@/components/ui/Container";
 interface ServiceHeroProps {
   title: string;
   image: string;
-  /**
-   * Set when `image` is a pre-designed 1600x200 banner with its own
-   * baked-in title/tagline text — renders at native aspect ratio with no
-   * overlay instead of cropping it into a tall photo hero.
-   */
   bannerHasText?: boolean;
 }
 
