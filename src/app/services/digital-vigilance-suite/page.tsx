@@ -19,25 +19,24 @@ export default function Page() {
       contentImage="/images/pics/The-Digital-Vigilance-Suite-1280X500.png"
       bullets={[
         {
-  label: "INTEGRATED CONTROL TOWER",
-  description:
-    "Centralized logistics visibility platform providing a 360-degree view of active shipments and operations.",
-},
-{
-  label: "IOT & SENSOR INTEGRATION",
-  description:
-    "Real-time cargo monitoring through location tracking, door-open alerts, and impact sensors for high-value shipments.",
-},
-{
-  label: "VIGILANCE (DUAL DASHCAMS)",
-  description:
-    "Enhanced fleet security with inward and outward-facing live camera monitoring to protect drivers and cargo integrity.",
-},
-{
-  label: "PREDICTIVE ETA",
-  description:
-    "AI-powered analytics delivering accurate arrival predictions by accounting for traffic, border delays, and route conditions.",
-},
+          label: "Integrated Control Tower",
+          description: "A centralized hub providing a 360-degree view of all active shipments.",
+        },
+        {
+          label: "IoT & Sensor Integration",
+          description:
+            "Real-time data on location, door-open alerts, and impact sensors for high-value cargo.",
+        },
+        {
+          label: "Vigilance (Dual Dashcams)",
+          description:
+            "Enhanced security via inward and outward-facing live camera streams to ensure driver safety and cargo integrity.",
+        },
+        {
+          label: "Predictive ETA",
+          description:
+            "AI-driven analytics to provide accurate arrival windows, accounting for traffic and border delays.",
+        },
       ]}
     />
   );

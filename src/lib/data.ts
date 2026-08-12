@@ -51,7 +51,7 @@ export const services: ServiceItem[] = [
     icon: "/images/icons/road-freight.png",
     subServices: [
       {
-        title: "Dry Containerized Transportation",
+        title: "Road Transportation",
         href: "/services/dry-containerized-transportation",
       },
       { title: "Reefer Transportation", href: "/services/reefer-transportation" },
@@ -64,12 +64,10 @@ export const services: ServiceItem[] = [
       "Smart warehousing and inventory diagnosis to optimize SKU velocity and fulfillment.",
     icon: "/images/icons/warehousing.png",
     subServices: [
-      {
-        title: "Warehousing & 3PL/4PL Management",
-        href: "/services/warehousing-3pl-4pl-management",
-      },
-      { title: "Expo & Event Logistics", href: "/services/exhibition-event-logistics" },
-      { title: "Cold Chain Warehousing", href: "/services/cold-chain-warehousing" },
+      { title: "Warehousing", href: "/services/warehousing" },
+      { title: "3PL/4PL Management", href: "/services/3pl-4pl-management" },
+      { title: "Expo Logistics", href: "/services/exhibition-event-logistics" },
+      { title: "Cold Chain Solutions", href: "/services/cold-chain-warehousing" },
     ],
   },
   {
@@ -81,30 +79,30 @@ export const services: ServiceItem[] = [
   },
   {
     slug: "tir-transit-cis-connect",
-    title: "TIR Transit & CIS Connect",
+    title: "TIR Regional Connectivity",
     description:
-      "Strategic corridors to Central Asia. Seamless cross-border transitions to Uzbekistan, Kazakhstan, and beyond.",
+      "Accelerating international trade through secure TIR operations connecting Pakistan with China, Central Asia, CIS countries, and Europe.",
     icon: "/images/icons/ocean-freight.png",
   },
   {
     slug: "specialized-project-logistics",
-    title: "Specialized Project Logistics",
+    title: "Project Logistics",
     description:
-      "Engineering-led transport for oversized industrial cargo, turbines, and heavy-lift machinery.",
+      "Engineering specialized logistics solutions for complex industrial projects requiring meticulous planning and execution.",
     icon: "/images/icons/project-logistics.png",
   },
   {
     slug: "digital-vigilance-suite",
-    title: "Technology: The Digital Vigilance Suite",
+    title: "Technology",
     description:
       "Real-time visibility powered by dual dashcam monitoring, predictive ETA analytics, and geo-fencing across every shipment.",
     icon: "/images/icons/expo-logistics.png",
   },
   {
     slug: "specialized-mining-logistics",
-    title: "Specialized Mining Logistics",
+    title: "Mining Logistics",
     description:
-      "Dedicated fleet and site support for coal and mineral extraction operations, from pit to port.",
+      "Supporting mining and energy sectors through continuous logistics operations, specialized fleets, and dedicated workforce management.",
     icon: "/images/icons/mining-logistics.png",
   },
 ];
@@ -113,19 +111,13 @@ export function findService(slug: string): ServiceItem | undefined {
   return services.find((service) => service.slug === slug);
 }
 
-export const whyMeridianPoints = [
-  {
-    title: "Dual Dashcam Monitoring",
-    description: "Live inward/outward streaming for safety.",
-  },
-  {
-    title: "Predictive ETA",
-    description: "AI-driven analytics factoring in border and traffic variables.",
-  },
-  {
-    title: "Geo-Fencing",
-    description: "Real-time alerts for route deviations or unauthorized stops.",
-  },
+export const whyMeridianPillars = [
+  "Digitally Enabled",
+  "Asset Optimized",
+  "Customer First",
+  "Industry Specialists",
+  "Operational Excellence",
+  "Future Ready",
 ];
 
 export const testimonials: Testimonial[] = [
@@ -170,7 +162,7 @@ export const faqs: FaqItem[] = [
   {
     question: "Do you provide end-to-end handling for the CIS and Central Asian regions?",
     answer:
-      "Yes. Our TIR Transit & CIS Connect corridors offer seamless cross-border transitions to Uzbekistan, Kazakhstan, and beyond, with full documentation and customs support handled in-house.",
+      "Yes. Our TIR Regional Connectivity corridors offer seamless cross-border transitions to Uzbekistan, Kazakhstan, and beyond, with full documentation and customs support handled in-house.",
   },
 ];
 

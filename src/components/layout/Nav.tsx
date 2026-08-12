@@ -163,6 +163,7 @@ export default function Nav() {
               src="/images/warehouseHero.png"
               alt="Meridian Logistics warehouse operations"
               fill
+              priority
               sizes="480px"
               className="object-cover"
             />

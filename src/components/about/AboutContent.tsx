@@ -44,11 +44,22 @@ export default function AboutContent() {
           Reliability At Scale
         </h2>
         <hr className="mt-6 border-gray-200" />
-        <p className="mt-6 text-base leading-relaxed text-gray-700">
-          Meridian Logistics stands as a trusted partner for outsourcing and managing complex
-          supply chains. We operate with a &ldquo;Digital First&rdquo; culture, ensuring that
-          every movement is tracked, every asset is optimized, and every delivery is secure.
-        </p>
+        <div className="mt-6 space-y-4 text-base leading-relaxed text-gray-700">
+          <p>
+            Meridian is a modern integrated logistics company delivering intelligent supply
+            chain solutions through technology, operational excellence, and experienced
+            professionals.
+          </p>
+          <p>
+            With capabilities spanning freight forwarding, transportation, warehousing,
+            distribution, project logistics, and value-added supply chain services, we help
+            businesses improve efficiency, visibility, and competitiveness.
+          </p>
+          <p>
+            Our commitment to reliability, transparency, and continuous innovation enables us
+            to deliver Logistics Without Limits.
+          </p>
+        </div>
 
         <h3 className="mt-12 text-xl font-extrabold uppercase tracking-tight text-navy-dark">
           Vision

@@ -3,7 +3,7 @@ import ServiceDetailTemplate from "@/components/services/ServiceDetailTemplate";
 
 const title = "Ocean Freight";
 const description =
-  "Full-container and LCL ocean freight solutions across major global trade lanes.";
+  "Reliable international ocean transportation supported by strategic carrier partnerships, competitive pricing, and complete shipment visibility.";
 
 export const metadata: Metadata = {
   title: `${title} | Meridian Logistics`,
@@ -14,35 +14,36 @@ export default function Page() {
   return (
     <ServiceDetailTemplate
       title={title}
-      eyebrow="Global Trade Lanes"
+      eyebrow="End-to-End Ocean Freight Services"
       heroImage="/images/banner/OCEAN-Freight.png"
       bannerHasText
       contentImage="/images/pics/OCEAN-Freight-1280X500.png"
+      intro="Reliable international ocean transportation supported by strategic carrier partnerships, competitive pricing, and complete shipment visibility from origin to destination."
       bullets={[
         {
-          label: "FCL (FULL CONTAINER LOAD)",
+          label: "Full Container Load (FCL)",
           description:
-            "Strategic alliances with premier carriers (Maersk, MSC, CMA CGM) ensuring space allocation during peak seasons.",
+            "Guaranteed equipment availability and priority vessel space through long-term partnerships with leading global shipping lines.",
         },
         {
-          label: "LCL (LESS-THAN-CONTAINER LOAD)",
+          label: "Less-than-Container Load (LCL)",
           description:
-            "In-house consolidation services for smaller volumes, reducing transit costs without compromising safety.",
+            "Cost-effective consolidation services for smaller shipments without compromising cargo safety or delivery schedules.",
         },
         {
-          label: "BREAK-BULK & RO-RO",
+          label: "Break Bulk & Ro-Ro",
           description:
-            "Specialized handling for non-containerized cargo, vehicles, and heavy machinery.",
+            "Specialized handling for heavy machinery, project cargo, industrial equipment, vehicles, and oversized freight.",
         },
         {
-          label: "REEFER & CLIMATE CONTROL",
+          label: "Reefer & Temperature-Controlled Cargo",
           description:
-            "Integrated cold chain for ocean transit, maintaining strict thermal parameters for perishables and chemicals.",
+            "Integrated cold-chain transportation maintaining precise temperature conditions for pharmaceuticals, food products, and sensitive chemicals.",
         },
         {
-          label: "PORT-TO-DOOR TRANSPARENCY",
+          label: "Door-to-Door Logistics",
           description:
-            "End-to-end management including drayage, port handling, and final delivery.",
+            "Complete logistics management including customs clearance, port handling, inland transportation, and final delivery.",
         },
       ]}
     />

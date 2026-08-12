@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Container from "@/components/ui/Container";
-import { whyMeridianPoints } from "@/lib/data";
+import { whyMeridianPillars } from "@/lib/data";
 
 export default function WhyMeridian() {
   return (
@@ -22,26 +22,24 @@ export default function WhyMeridian() {
           </div>
 
           <div>
-            <h2 className="text-2xl font-extrabold uppercase tracking-tight text-navy-dark md:text-3xl">
-              The Meridian Control Tower
-            </h2>
-            <p className="mt-4 text-base leading-relaxed text-gray-600">
-              We provide &ldquo;Total Visibility&rdquo; through an integrated
-              digital culture. We eliminate supply chain blind spots through
-              technical vigilance.
-            </p>
-
-            <ul className="mt-6 space-y-4">
-              {whyMeridianPoints.map(({ title, description }) => (
-                <li key={title} className="flex gap-3">
-                  <span className="mt-2 h-2 w-2 flex-shrink-0 rounded-full bg-red" />
-                  <p className="text-sm leading-relaxed text-gray-600">
-                    <span className="font-bold text-navy-dark">{title}:</span>{" "}
-                    {description}
-                  </p>
+            <ul className="grid grid-cols-2 gap-x-6 gap-y-4">
+              {whyMeridianPillars.map((pillar) => (
+                <li key={pillar} className="flex items-start gap-3">
+                  <span className="mt-1.5 h-2 w-2 flex-shrink-0 rounded-full bg-red" />
+                  <span className="text-sm font-bold uppercase tracking-wide text-navy-dark">
+                    {pillar}
+                  </span>
                 </li>
               ))}
             </ul>
+
+            <p className="mt-8 text-xl font-extrabold uppercase leading-snug tracking-tight text-navy-dark md:text-2xl">
+              Connecting Businesses.
+              <br />
+              Empowering Supply Chains.
+              <br />
+              <span className="text-red">Delivering Logistics Without Limits.</span>
+            </p>
           </div>
         </div>
       </Container>

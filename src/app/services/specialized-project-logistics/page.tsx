@@ -13,31 +13,32 @@ export default function Page() {
   return (
     <ServiceDetailTemplate
       title={service.title}
-      eyebrow="Engineering-Led Heavy-Lift"
+      eyebrow="Heavy Lift & Project Cargo"
       heroImage="/images/banner/Specialized-Projectt.png"
       bannerHasText
       contentImage="/images/pics/Specialized-Project-1280X500.png"
+      intro="Engineering specialized logistics solutions for complex industrial projects requiring meticulous planning and execution."
       bullets={[
         {
-  label: "OOG & HEAVY-LIFT",
-  description:
-    "Engineering-driven transportation solutions for oversized and heavy cargo including turbines, boilers, and industrial equipment.",
-},
-{
-  label: "ROUTE SURVEYS & FEASIBILITY",
-  description:
-    "Comprehensive route assessments covering roads, bridges, and infrastructure to ensure safe heavy-lift operations.",
-},
-{
-  label: "SRO EXPERTISE (678 & 575)",
-  description:
-    "Specialized support with Pakistan’s SRO frameworks, enabling duty exemptions and regulatory compliance for clients.",
-},
-{
-  label: "SHIP CHARTERING & STEVEDORING",
-  description:
-    "Direct vessel chartering and efficient port-side cargo handling solutions for dry bulk and project shipments.",
-},
+          label: "Heavy Lift & OOG Cargo",
+          description:
+            "Safe transportation of oversized industrial equipment including turbines, transformers, generators, and heavy machinery.",
+        },
+        {
+          label: "Route Engineering",
+          description:
+            "Comprehensive route surveys, bridge analysis, permit management, and feasibility assessments.",
+        },
+        {
+          label: "Regulatory Expertise",
+          description:
+            "Professional guidance on Pakistan's SRO regulations, customs procedures, and duty exemption opportunities.",
+        },
+        {
+          label: "Ship Chartering & Stevedoring",
+          description:
+            "Complete vessel chartering, cargo handling, port operations, and project cargo management.",
+        },
       ]}
     />
   );

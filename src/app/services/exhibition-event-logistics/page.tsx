@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 import ServiceDetailTemplate from "@/components/services/ServiceDetailTemplate";
 
-const title = "Expo & Event Logistics";
+const title = "Expo Logistics";
 const description =
-  "End-to-end logistics for exhibitions, trade shows, and time-sensitive event cargo.";
+  "Delivering complete logistics support for exhibitions, trade shows, conferences, and corporate events.";
 
 export const metadata: Metadata = {
   title: `${title} | Meridian Logistics`,
@@ -14,26 +14,18 @@ export default function Page() {
   return (
     <ServiceDetailTemplate
       title={title}
-      eyebrow="Time-Sensitive Event Cargo"
+      eyebrow="Exhibition & Event"
       heroImage="/images/banner/Exhibition-Event-Logistics.png"
       bannerHasText
       contentImage="/images/pics/Exhibition-Event-Logistics-1280X500.png"
-      bullets={[
-        {
-  label: "FLAWLESS EXECUTION",
-  description:
-    "Time-critical exhibition logistics with on-site storage, positioning, and seamless event delivery.",
-},
-{
-  label: "INSTALLATION SERVICES",
-  description:
-    "Professional on-site teams for the safe unpacking and installation of sensitive exhibition materials.",
-},
-{
-  label: "SITE MANAGEMENT",
-  description:
-    "Comprehensive traffic control and venue coordination to ensure timely setup and teardown operations.",
-},
+      intro="Delivering complete logistics support for exhibitions, trade shows, conferences, and corporate events."
+      simpleList={[
+        "Time-critical transportation",
+        "Customs clearance",
+        "On-site delivery and positioning",
+        "Professional unpacking and installation",
+        "Event logistics coordination",
+        "Dismantling and return logistics",
       ]}
     />
   );
